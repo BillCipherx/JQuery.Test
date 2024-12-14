@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<style>
+    div{
+        width: 300px;
+        height: 100px;
+        padding: 10px;
+        margin: 5px;
+        background-color: gray;
+    }
+</style>
+<body>
+    
+    <div></div>
+    <button>click</button>
+
+    <script>
+        $(function(){
+            $("button").click(function(){
+                var a = "";
+                a += "Width: "+ $("div").width() +"<br>";
+                a += "Height: "+ $("div").height() +"<br>";
+                a += "InnerHeight: "+ $("div").innerHeight() +"<br>";
+                a += "InnerHeight: "+ $("div").innerWidth() +"<br>";
+                a += "OuterHeight: "+ $("div").outerHeight() +"<br>";
+                a += "OuterHeight: "+ $("div").outerWidth() +"<br>";
+                $("div").html(a);
+            })
+        })
+    </script>
+
+</body>
+</html>

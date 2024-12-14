@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<style>
+    div{
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        position: absolute;
+    }
+</style>
+<body>
+    
+    <button>Click</button>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, eius. Quas inventore ducimus aut aperiam doloremque mollitia fugiat, rem numquam autem architecto suscipit, deserunt officia delectus, quod soluta perferendis labore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel recusandae architecto animi soluta! Autem quod deleniti excepturi soluta, beatae dolore molestiae itaque natus fuga obcaecati, sint voluptatum delectus? Sint, veritatis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet adipisci officiis temporibus rerum natus molestiae possimus saepe minima asperiores amet necessitatibus cum, in aliquam earum consectetur deserunt eius quia. Error?</p>
+    <div>OK</div>
+
+    <script>
+        $(function(){
+            $("button").click(function(){
+                $("div").animate({
+                    // left:'25',
+                    // opacity:'0.5',
+                    // width:'150px',
+                    // height:'150'
+                    //height: 'toggle'
+                })
+            })
+        })
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<style>
+    .main *{
+        display: block;
+        border: 2px solid red;
+        color: red;
+        padding: 10px;
+        margin: 10px;
+    }        
+</style>
+<body>
+    
+    <div class="main">div
+        <p>paragraph</p>
+        <span>span</span>
+        <h2>heading tow</h2>
+        <h3>heading three</h3>
+        <p>paragraph</p>
+    </div>
+
+    <script>
+        $(function(){
+
+            // $("h2").siblings().css("border", "2px solid black");
+            // $("h2").siblings("p").css("border", "2px solid black");
+            // $("h2").next().css("border", "2px solid black");
+            // $("h2").nextall().css("border", "2px solid black");
+            // $("span").nextUntil("p").css("border", "2px solid black");
+            // $("h2").prev().css("border", "2px solid black");
+            // $("h2").prevAll().css("border", "2px solid black");
+            $("h3").prevUntil().css("border", "2px solid black");
+
+        })
+    </script>
+
+</body>
+</html>

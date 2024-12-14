@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<style>
+    p{
+        background-color: red;
+        color: white;
+        overflow: hidden;
+    }
+</style>
+<body>
+    
+    <div id="stop">Stop Animation</div>
+    <div id="main">Click</div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, tenetur aliquid et sunt sed obcaecati maxime quas nemo voluptatem? Quae, repellendus suscipit tenetur vitae perspiciatis incidunt aut soluta. Repellat, accusamus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime unde placeat quidem, cum modi vel. Ipsa odio quod, mollitia obcaecati aspernatur tempore quasi dolorum quae ea laborum voluptate accusantium itaque? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus vitae tempore quae eligendi velit nisi autem, dicta explicabo pariatur dolores voluptates deserunt, id nihil impedit iure eaque repellendus qui! Odit.</p>
+
+    <script>
+        $(function(){
+            $("p").hide();
+            $("#main").click(function(){
+                $('p').slideDown(3000);
+            })
+            $('#stop').click(function(){
+                $('p').stop();
+            })
+        })
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<style>
+    .main{
+        border: 1px solid black;
+    }
+</style>
+<body>
+    
+    <h1>Welcome jQuery</h1>
+    <p>This is a pragraph</p>
+    <div class="main">
+        <p>Pragraph 1</p>
+        <p>Pragraph 2</p>
+    </div>
+    <div class="main">
+        <p>Pragraph 1</p>
+        <p>Pragraph 2</p>
+    </div>
+    <div class="main">
+        <p>Pragraph 1</p>
+        <p>Pragraph 2</p>
+    </div>
+    <div class="main">
+        <p>Pragraph 1</p>
+        <p>Pragraph 2</p>
+    </div>
+
+    <script>
+        $(function(){
+            $("div.main").first().css({"background-color": "red", "color": "white"});
+            $("div.main").last().css({"background-color": "blue", "color": "white"});
+            $("div.main").eq(1).css({"background-color": "black", "color": "white"});
+            
+        })
+    </script>
+
+</body>
+</html>

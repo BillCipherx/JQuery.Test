@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<style>
+    p{
+        display: none;
+    }
+</style>
+<body>
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia consequatur impedit voluptatum totam accusantium obcaecati vero exercitationem quisquam quas, alias, eligendi facilis laborum cupiditate aliquid voluptates ab quibusdam aspernatur ipsum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita vel nobis repellendus placeat odit temporibus aliquam, possimus distinctio, voluptatibus iure ex. Et provident, exercitationem quaerat laboriosam quasi esse doloremque aspernatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nulla mollitia iusto deleniti illo ab assumenda cupiditate pariatur vero ratione cumque repellat, debitis perferendis eius neque, in distinctio doloribus nam.</p>
+    <button class="hide">Hide</button>
+    <button class="show">Show</button>
+    <button class="toggle">Toggle</button>
+
+    <script>
+        
+        //Hide, Show, Toggle
+        // $(function(){
+        //     $(".hide").click(function(){
+        //         $("p").hide(2000);
+        //     })
+        //     $(".show").click(function(){
+        //         $("p").show(2000);
+        //     })
+        //     $(".toggle").click(function(){
+        //         $("p").toggle(2000);
+        //     })
+        // })
+
+        //fadeOut, fadeIn, fadeToggle
+        // $(function(){
+        //     $(".hide").click(function(){
+        //         $("p").fadeOut(2000);
+        //     })
+        //     $(".show").click(function(){
+        //         $("p").fadeIn(2000);
+        //     })
+        //     $(".toggle").click(function(){
+        //         $("p").fadeToggle(2000);
+        //     })
+        // })
+
+        //SlideUp, SlideDown, SlideToggle
+        $(function(){
+            $(".hide").click(function(){
+                $("p").slideUp(2000);
+            })
+            $(".show").click(function(){
+                $("p").slideDown(2000);
+            })
+            $(".toggle").click(function(){
+                $("p").slideToggle();
+            })
+        })
+
+    </script>
+
+</body>
+</html>
